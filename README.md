@@ -1,36 +1,66 @@
 # learning-swipe
 
-A swipe library of long-form deep dives across broadening topics. Built to replace Instagram with something that actually makes you smarter.
+A swipe library for long-form deep dives. Replace mindless scrolling with structured learning across philosophy, history, science, economics, and the rest of the world worth knowing about.
 
 ## What it is
 
-- **11 categories** from `broadening.md`: Philosophy, Cognitive Science, Sciences, Economics, Tech History, Global History, India, United States, Geography, Health, Culture.
-- **5 cards per category** (55 seed cards), each ~1,000 words.
-- **Bullet-highlight-then-prose** format. Section bullets up top scan in seconds; prose below reads on demand.
-- **Swipe horizontally** (or arrow keys) to move between cards within a topic.
-- **Tap-to-listen** uses the browser's Web Speech API. Single tap to play/pause, double tap to stop.
-- **No runtime LLM, no backend.** Cards are static markdown in `content/`. Everything is generated up front, served as a static site.
+Most knowledge content online is either too shallow (Instagram captions, basic summaries) or too dense (textbooks, dry encyclopedias). The space in between, where you can actually understand a topic in five to ten minutes and come away genuinely smarter, is mostly missing.
 
-## Stack
+learning-swipe fills that space. Each card is a ~1,000 word deep dive on one topic, long enough to teach you the fundamentals, the lineage, the modern evolution, what most people get wrong, and what to actually carry away. Short enough to read between coffees.
 
-- Next.js 14 (App Router) + React 18
-- Tailwind CSS for the base + custom CSS for the typography (Charter serif body, Söhne-fallback sans for display)
-- `react-markdown` + `remark-gfm` for rendering
-- `react-swipeable` for gestures
-- `gray-matter` for frontmatter
+Pick a category. Swipe through articles. Read or listen.
 
-## Local development
+## What's covered
+
+55 seed cards across 11 categories:
+
+- **Philosophy** — Stoicism, Existentialism, Ancient Greeks, Eastern thought, ethical frameworks
+- **Cognitive Science** — System 1 vs System 2, cognitive biases, heuristics, nudge theory, Cialdini's persuasion principles
+- **Sciences** — Evolution, game theory, relativity/quantum/entropy, climate and energy, networks and complexity
+- **Economics** — How modern money works, the 2008 crisis, Bitcoin in plain English, globalization and supply chains, Keynes vs Hayek
+- **Tech History** — The computing arc, Silicon Valley's origins, internet architecture, FAANG arcs, the AI moment
+- **Global History** — The 20th century, China's rise, Middle East 101, the EU, Ukraine and Gaza
+- **India** — Modern India, the political system, the economic story since 1991, caste/religion/diversity, foreign policy
+- **United States** — US history fast pass, the Constitution, parties and culture wars, race in America, Silicon Valley + Wall Street
+- **Geography** — Mental world map, the US states that matter, climate zones, rivers/mountains/currents, geography and geopolitics
+- **Health** — Sleep, exercise, nutrition, stress and mental health, habit formation
+- **Culture** — US sports, canonical films, canonical TV, music history, stand-up comedy
+
+## How a card is shaped
+
+Every card is built to be both scannable and deep:
+
+- Opens with what the topic is and why it actually matters
+- Walks through how it started, with real names and dates
+- Lays out the key ideas, with examples woven in where they help understanding
+- Covers related ideas, debates, and modern descendants where they exist
+- Calls out the common misconceptions
+- Closes with what to actually carry away
+
+No bullet points trying to summarize a continent. No academic prose trying to impress. Just a knowledgeable friend explaining the topic the way they would in person.
+
+## Features
+
+- **Swipe between cards** in any category. Touch swipe on phone, arrow keys on desktop.
+- **Tap to listen.** Every card has a built-in text-to-speech button using your browser's Web Speech API. Tap once to play or pause, double-tap to stop. Works on iOS Safari, Android Chrome, and desktop browsers.
+- **Mobile-first typography.** Paper-like cream palette with auto dark mode, serif body type, generous line-height, optimized for phone reading.
+- **PWA-ready.** Add it to your home screen for a native app feel, no app store required.
+- **Static and fast.** No backend, no database, no tracking, no analytics. Cards are markdown rendered at request time.
+
+## Run it locally
 
 ```bash
+git clone https://github.com/<your-username>/learning-swipe.git
+cd learning-swipe
 npm install
 npm run dev
 ```
 
 Open http://localhost:3000.
 
-## Adding more cards
+## Add your own cards
 
-Drop a markdown file into `content/<category>/<slug>.md` with frontmatter:
+Drop a markdown file in `content/<category>/<slug>.md` with frontmatter:
 
 ```yaml
 ---
@@ -41,23 +71,24 @@ order: 6
 ---
 ```
 
-Then body in markdown. Section headings = `##`. Each section starts with a bulleted highlight tile (a `<ul>` that immediately follows the `<h2>`). Body bullets, paragraphs, examples below.
-
-The card list rebuilds automatically on next request — no manual indexing.
+Then write the body. Use `##` for section headings. The card list rebuilds automatically; no manual indexing.
 
 ## Deploy to Vercel
 
-1. Push this repo to GitHub.
-2. Go to vercel.com, import the repo, accept defaults.
-3. Vercel auto-deploys on every push.
-4. Add it to your phone home screen via Safari/Chrome "Add to Home Screen" for the PWA install.
+Push the repo to GitHub, then import it on [vercel.com](https://vercel.com). Vercel detects Next.js, builds, and serves. Once it's live, open the URL in Safari or Chrome on your phone and "Add to Home Screen" to install the PWA.
 
-## Content rules (for future cards)
+## Content principles (if you add your own cards)
 
-- ~1,000 words per card. Not too short, not verbose.
+- Target ~1,000 words. Not too short, not verbose.
 - Bullets do most of the work. Paragraphs only for the "What is X" intro and short examples woven inside bulleted sections.
 - Voice: a knowledgeable friend explaining simply. Not academic. Not quippy.
 - Specific over general. Real names, dates, numbers. Bold proper nouns the first time.
-- No em dashes (—). Use commas, periods, parentheses.
-- No AI-tells: moreover, furthermore, ultimately, in essence, fundamentally, delve into, navigate, tapestry, landscape, realm. No rule-of-three flourishes. No "not X, but Y." Name people instead of "scholars argue."
-- Section headings flex to the topic. Always start with "What is X and why it matters." After that, pick what the topic actually calls for.
+- Section headings flex to the topic. Always open with "What is X and why it matters." After that, pick what the topic actually calls for.
+
+## Stack
+
+Next.js 14 (App Router), React 18, Tailwind CSS, react-markdown, react-swipeable, gray-matter. No external APIs at runtime.
+
+## License
+
+MIT.
