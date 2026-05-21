@@ -12,19 +12,20 @@ Pick a category. Swipe through articles. Read or listen.
 
 ## What's covered
 
-55 seed cards across 11 categories:
+115 cards across 12 categories. ~10 cards per category (5 in Religion).
 
-- **Philosophy** — Stoicism, Existentialism, Ancient Greeks, Eastern thought, ethical frameworks
-- **Cognitive Science** — System 1 vs System 2, cognitive biases, heuristics, nudge theory, Cialdini's persuasion principles
-- **Sciences** — Evolution, game theory, relativity/quantum/entropy, climate and energy, networks and complexity
-- **Economics** — How modern money works, the 2008 crisis, Bitcoin in plain English, globalization and supply chains, Keynes vs Hayek
-- **Tech History** — The computing arc, Silicon Valley's origins, internet architecture, FAANG arcs, the AI moment
-- **Global History** — The 20th century, China's rise, Middle East 101, the EU, Ukraine and Gaza
-- **India** — Modern India, the political system, the economic story since 1991, caste/religion/diversity, foreign policy
-- **United States** — US history fast pass, the Constitution, parties and culture wars, race in America, Silicon Valley + Wall Street
-- **Geography** — Mental world map, the US states that matter, climate zones, rivers/mountains/currents, geography and geopolitics
-- **Health** — Sleep, exercise, nutrition, stress and mental health, habit formation
-- **Culture** — US sports, canonical films, canonical TV, music history, stand-up comedy
+- **Philosophy** — Stoicism, Existentialism, Ancient Greeks, Eastern thought, ethical frameworks, Confucianism, Marxism, Liberalism, Pragmatism, the mind-body problem
+- **Religion** — Christianity, Islam, Hinduism, Buddhism, Judaism (history, beliefs, demographics, sects, modern debates for each)
+- **Cognitive Science** — System 1 vs System 2, cognitive biases, heuristics, nudge theory, Cialdini's persuasion principles, memory, attention, flow states, the hedonic treadmill, motivated reasoning
+- **Sciences** — Evolution, game theory, relativity/quantum/entropy, climate and energy, networks and complexity, DNA and CRISPR, the Standard Model, how vaccines work, the microbiome, climate feedbacks
+- **Economics** — How modern money works, the 2008 crisis, Bitcoin in plain English, globalization and supply chains, Keynes vs Hayek, inflation, comparative advantage, VC and PE, the reshaped labor market, behavioral economics
+- **Tech History** — The computing arc, Silicon Valley's origins, internet architecture, FAANG arcs, the AI moment, the Apple comeback, Linux and open source, the dotcom bubble, the mobile revolution, TSMC
+- **Global History** — The 20th century, China's rise, Middle East 101, the EU, Ukraine and Gaza, the Cold War, WWII Pacific theater, the fall of the USSR, African decolonization, the British Empire
+- **India** — Modern India, the political system, the economic story since 1991, caste/religion/diversity, foreign policy, pre-1991 License Raj, classical traditions, the Constitution, the Northeast and Kashmir, the tech industry rise
+- **United States** — US history fast pass, the Constitution, parties and culture wars, race in America, Silicon Valley + Wall Street, the American Revolution, the Civil War, the Great Depression + New Deal, the 1960s, immigration
+- **Geography** — Mental world map, the US states that matter, climate zones, rivers/mountains/currents, geography and geopolitics, why Russia is the way it is, why India is the way it is, the Mediterranean, the Pacific Rim, Africa's geography
+- **Health** — Sleep, exercise, nutrition, stress and mental health, habit formation, metabolic syndrome, aging biology, why diets fail, vaccines and immunity, fitness mental models
+- **Culture** — US sports, canonical films, canonical TV, music history, US stand-up comedy, Indian cinema, global music genres, modern literature, fashion as cultural signal, sports beyond US
 
 ## How a card is shaped
 
