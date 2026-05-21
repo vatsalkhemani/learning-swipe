@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/build-index.js && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build-index": "node scripts/build-index.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
