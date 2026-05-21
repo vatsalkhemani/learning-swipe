@@ -4,7 +4,6 @@ export const metadata = {
   title: 'learning-swipe',
   description: 'A swipe library of deep dives across broadening topics.',
   manifest: '/manifest.json',
-  themeColor: '#faf7f2',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
@@ -18,6 +17,7 @@ export const viewport = {
   maximumScale: 1,
   userScalable: false,
   viewportFit: 'cover',
+  themeColor: '#faf7f2',
 };
 
 export default function RootLayout({ children }) {
