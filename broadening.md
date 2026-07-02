@@ -180,5 +180,5 @@
 
 - **Mood-based.** Open this when you have 20 min and curiosity, pick anything that catches the eye.
 - **Anchors first.** If you want to do this seriously per category, start with the Anchor. Don't try to read multiple things in parallel.
-- **No checkboxes.** This is reference, not a roadmap. Track what stuck in `areas/learning/memory.md` if a piece really lands.
+- **No checkboxes.** This is reference, not a roadmap. New cards: drop a .md into content/<category>/ with frontmatter.
 - **Add as you go.** When a podcast/book/channel earns a spot, add it to its category.
